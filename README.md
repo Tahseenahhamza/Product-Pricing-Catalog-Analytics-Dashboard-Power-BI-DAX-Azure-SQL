@@ -85,10 +85,10 @@ WHERE original_price LIKE '%?%'
 ![page3-brand-intelligence.png
 ](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Overview.png)
 ### Page 2 — Discount & Profitability
-![Page 2](dashboard/screenshots/page2-discount-profitability.png)
+![[Page 2](dashboard/screenshots/page2-discount-profitability.png)](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Discount%20and%20profitability.jpg)
 
 ### Page 3 — Brand Intelligence
-![Page 3](dashboard/screenshots/page3-brand-intelligence.png)
+![[Page 3](dashboard/screenshots/page3-brand-intelligence.png)](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Brand%20Intelligence.jpg)
 
 ---
 
