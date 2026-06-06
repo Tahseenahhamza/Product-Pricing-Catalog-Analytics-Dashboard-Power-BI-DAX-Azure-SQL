@@ -334,20 +334,10 @@ Brand Tier Reference[Brand]
 
 # 🚀 Future Enhancements
 
-## Version 2.0
-
 * Revenue analysis using units sold
 * Time-series trend analysis
 * Profit forecasting
 * Dynamic pricing monitoring
-
-## Version 3.0
-
-* Multi-category retail analysis
-* Cross-platform comparison
-* Predictive pricing model
-* Customer segmentation analysis
-
 ---
 
 # 🛠 Tech Stack
