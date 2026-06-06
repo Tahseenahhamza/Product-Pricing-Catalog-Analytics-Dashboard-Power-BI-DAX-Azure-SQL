@@ -25,21 +25,6 @@ actually profitable.
 | Power BI Service | Publishing for live interactive access |
 | DAX | 12 measures for pricing, profitability, discount analysis |
 
-
-urbanstyle-apparel-pricing-analysis/
-├── sql/
-│   └── data_cleaning.sql     # Azure SQL cleaning queries
-├── dashboard/
-│   └── screenshots/          # All 3 dashboard page screenshots
-├── docs/
-│   ├── TShirt_Project_Documentation.pdf
-│   └── UrbanStyle_LinkedIn_Document.docx
-├── data/
-│   └── README.md            
-└── README.md
-
----
-
 ## Data Cleaning — Azure SQL
 
 Both price columns (Sale Price and MRP) were stored as text 
@@ -104,9 +89,7 @@ WHERE original_price LIKE '%?%'
 
 ## Live Dashboard
 
-[View Interactive Dashboard on Power BI Service](your-link-here)
-
----
+[View Interactive Dashboard on Power BI Service](https://app.fabric.microsoft.com/links/XqlYtGqsAd?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&pbi_source=linkShare)
 
 ## Author
 
@@ -114,9 +97,8 @@ WHERE original_price LIKE '%?%'
 tahseenahhamza@gmail.com  
 [LinkedIn](https://linkedin.com/in/tahseenah-hamza)
 
-> Raw data and .pbix file not shared intentionally.  
+> .pbix file not shared intentionally.  
 > This repository is for portfolio display only.
 
 ---
 
-## Project Structure
