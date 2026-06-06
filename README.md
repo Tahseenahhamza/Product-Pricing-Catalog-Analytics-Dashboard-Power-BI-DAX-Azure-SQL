@@ -82,9 +82,8 @@ WHERE original_price LIKE '%?%'
 ## Dashboard Screenshots
 
 ### Page 1 — Catalog Overview
-![Page 1](<img width="1207" height="695" alt="image" src="https://github.com/user-attachments/assets/a1727d3c-e3e6-4ef5-97c0-4004fcfdb726" />
-)
-
+[page3-brand-intelligence.png
+](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Overview.png)
 ### Page 2 — Discount & Profitability
 ![Page 2](dashboard/screenshots/page2-discount-profitability.png)
 
