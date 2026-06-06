@@ -1,104 +1,206 @@
-# UrbanStyle Apparel — Fashion Pricing Analysis
+# 👕 UrbanStyle Apparel Analytics Dashboard
 
-> Analysing 1,428 t-shirt SKUs across 143 brands to uncover 
-> discount manipulation, tier profitability, and brand performance 
-> on Indian e-commerce.
+### Pricing Intelligence | Discount Analysis | Brand Profitability
 
----
-
-## Problem Statement
-
-Indian e-commerce platforms advertise discounts of 60–90%. 
-This project investigates whether these represent genuine markdowns 
-or artificially inflated MRPs — and which brands and tiers are 
-actually profitable.
+An end-to-end retail analytics project built using Azure SQL and Power BI to analyze 1,428 apparel SKUs across 143 brands.
 
 ---
 
-## Tools & Technologies
+## 🔗 Quick Access
 
-| Tool | Purpose |
-|------|---------|
-| Azure SQL | Data storage and cleaning |
-| SQL (UPDATE, REPLACE, TRIM, CAST) | Removing special characters from price fields |
-| Power BI Desktop | Data modelling, DAX measures, dashboard design |
-| Power BI Service | Publishing for live interactive access |
-| DAX | 12 measures for pricing, profitability, discount analysis |
+📊 Live Dashboard: https://app.fabric.microsoft.com/links/XqlYtGqsAd?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&pbi_source=linkShare
 
-## Data Cleaning — Azure SQL
+💼 LinkedIn: https://linkedin.com/in/tahseenah-hamza
 
-Both price columns (Sale Price and MRP) were stored as text 
-with `?` characters embedded. Cleaned using:
+📂 GitHub: https://github.com/Tahseenahhamza
 
-```sql
-UPDATE [dbo].[Men Tshirt]
-SET original_price = TRIM(REPLACE(CAST(original_price AS varchar(max)), '?', ''))
-WHERE original_price LIKE '%?%'
+---
+
+# Dashboard Preview
+
+## Executive Overview
+
+![Executive Overview](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Overview.png?raw=true)
+
+---
+
+## Discount & Profitability
+
+![Discount & Profitability](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Discount%20and%20profitability.jpg?raw=true)
+
+---
+
+## Brand Intelligence
+
+![Brand Intelligence](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Brand%20Intelligence.jpg?raw=true)
+
+---
+
+# Executive Summary
+
+This project investigates whether large e-commerce discounts represent genuine markdowns or artificially inflated MRPs.
+
+Using Azure SQL, Power BI, and DAX, the analysis uncovers pricing patterns, profitability drivers, catalog inefficiencies, and strategic opportunities across men's apparel listings.
+
+Dataset Coverage:
+
+- 1,428 Products
+- 143 Brands
+- Multiple Pricing Tiers
+- Domestic & International Brands
+
+---
+
+# Key Findings
+
+## 📌 MRP Inflation Is Systemic
+
+Average MRP is inflated by **2.32x** compared to actual selling prices.
+
+---
+
+## 📌 1 In 4 Products Uses Extreme Discounting
+
+26.5% of products carry discounts greater than 70%.
+
+---
+
+## 📌 Luxury Outperforms Budget By 16x
+
+| Tier | Profit Per Unit |
+|--------|--------|
+| Luxury | ₹1,586 |
+| Budget | ₹99 |
+
+---
+
+## 📌 International Brands Generate 4x More Profit
+
+| Brand Type | Profit Per Unit |
+|------------|------------|
+| International | ₹575 |
+| Domestic | ₹141 |
+
+---
+
+## 📌 High SKU Count Does Not Equal Profitability
+
+The Indian Garage Co contributes 184 SKUs (12.9% of catalog volume) but delivers among the lowest profit-per-unit values.
+
+---
+
+# Business Recommendations
+
+### Expand Luxury & Premium Assortment
+
+Luxury products generate substantially higher margins despite low catalog representation.
+
+### Introduce MRP Inflation Controls
+
+Products exceeding predefined inflation thresholds should be reviewed.
+
+### Reassess Economy Tier Strategy
+
+Economy products show high discount dependence and low profitability.
+
+### Increase International Brand Partnerships
+
+International brands consistently outperform domestic competitors.
+
+### Monitor Extreme Discount Products
+
+Reduce reliance on artificial markdown strategies.
+
+---
+
+# Tech Stack
+
+| Category | Tools |
+|-----------|--------|
+| Database | Azure SQL |
+| Query Language | SQL |
+| Visualization | Power BI |
+| Analytics | DAX |
+| Modelling | Star Schema |
+
+---
+
+# Data Pipeline
+
+Raw Dataset
+↓
+Azure SQL Cleaning
+↓
+Star Schema Modelling
+↓
+DAX Measure Development
+↓
+Power BI Dashboard
+↓
+Business Recommendations
+
+---
+
+# Data Model
+
+Add your Star Schema image here.
+
+```text
+Fact Table
+│
+├── Product Information
+├── Pricing Data
+├── Profit Metrics
+│
+Dimension Table
+│
+├── Brand
+├── Tier
+├── Origin
 ```
-1,428 rows affected on both columns.
 
 ---
 
-## Data Model
+# Skills Demonstrated
 
-- **Star Schema** — 1 Fact table + 1 Dimension table
-- **T-Shirt Products** (Fact) — 1,428 rows
-- **Brand Tier Reference** (Dimension) — 143 brands
-- Linked via `Brand` column (Many-to-One)
+### Technical
 
----
+- Azure SQL
+- SQL Data Cleaning
+- Power BI
+- DAX
+- Data Modelling
 
-## Key Numbers
+### Analytics
 
-| Metric | Value |
-|--------|-------|
-| Total SKUs | 1,428 |
-| Total Brands | 143 |
-| Avg Sale Price | Rs.1,034 |
-| Avg Discount % | 57.1% |
-| MRP Inflation Ratio | 2.32x |
-| Extreme Discount % (70%+) | 26.5% |
-| Avg Profit Per Unit | Rs.243 |
-| Luxury Profit Per Unit | Rs.1,586 |
-| Budget Profit Per Unit | Rs.99 |
+- Pricing Analytics
+- Profitability Analysis
+- Retail Analytics
+- Business Intelligence
 
----
+### Business
 
-## Dashboard Screenshots
-
-### Page 1 — Catalog Overview
-![page3-brand-intelligence.png
-](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Overview.png)
-### Page 2 — Discount & Profitability
-![[Page 2](dashboard/screenshots/page2-discount-profitability.png)](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Discount%20and%20profitability.jpg)
-
-### Page 3 — Brand Intelligence
-![[Page 3](dashboard/screenshots/page3-brand-intelligence.png)](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Brand%20Intelligence.jpg)
+- Data Storytelling
+- Executive Reporting
+- Strategic Recommendations
+- KPI Design
 
 ---
 
-## Key Findings
+# Live Dashboard
 
-1. MRP is inflated **2.32x** on average — discounts are manufactured
-2. **1 in 4 SKUs** carries a 70%+ discount — fake anchor pricing is widespread
-3. Luxury tier earns **Rs.1,586/unit** from 58 SKUs vs Budget's Rs.99 from 560 SKUs
-4. International brands earn **4x more profit** per unit than domestic brands
-5. The Indian Garage Co has 184 SKUs but earns only Rs.77/unit — lowest among top 10
+### View Interactive Dashboard
+
+https://app.fabric.microsoft.com/links/XqlYtGqsAd?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&pbi_source=linkShare
 
 ---
 
-## Live Dashboard
+# Author
 
-[View Interactive Dashboard on Power BI Service](https://app.fabric.microsoft.com/links/XqlYtGqsAd?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&pbi_source=linkShare)
+**Tahseenah Hamza**
 
-## Author
+Data Analyst
 
-**Tahseenah Hamza** — Data Analyst  
-tahseenahhamza@gmail.com  
-[LinkedIn](https://linkedin.com/in/tahseenah-hamza)
+📧 tahseenahhhamza@gmail.com
 
-> .pbix file not shared intentionally.  
-> This repository is for portfolio display only.
-
----
-
+🔗 LinkedIn: https://linkedin.com/in/tahseenah-hamza
