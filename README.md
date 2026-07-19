@@ -60,7 +60,7 @@ This project analyzes **1,428 T-shirt SKUs across 143 brands** to uncover pricin
 
 ## Page 1 — Catalog Overview
 
-![Catalog Overview](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Overview.png?raw=true)
+![Catalog Overview](https://github.com/Tahseenahhamza/tshirt-market-analysis-powerbi/blob/main/Overview.png?raw=truehttps://github.com/Tahseenahhamza/Product-Pricing-Catalog-Analytics-Dashboard-Power-BI-DAX-Azure-SQL/blob/main/Overview.jpg)
 
 ### Focus Areas
 
